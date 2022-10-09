@@ -11,29 +11,35 @@
 		/>
 		<title>Tailwind Portfolio</title>
 	</head>
-	<body class="font-nunito">
+	<body class="font-nunito scroll-smooth dark">
 		<!-- intro section -->
 		<div
-			class="h-1/2 lg:h-screen bg-gradient-to-t from-red-200 relative overflow-hidden"
+			class="h-1/2 lg:h-screen bg-gradient-to-t from-red-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden"
 		>
 			<!-- navbar -->
-			<nav class="w-full fixed top-0 bg-white z-10">
+			<nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
 				<div class="container mx-auto py-5 flex items-center justify-between">
 					<div class="flex items-center cursor-pointer gap-2">
-						<img class="w-8" src="./img/logo.png" alt="" />
-						<span class="text-2xl font-bold text-red-900">Portwind.</span>
+						<span class="text-2xl font-bold text-red-900 dark:text-white"
+							>Raouf Satto.</span
+						>
 					</div>
-					<ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm">
-						<li class="hover:text-gray-400"><a href="">HOME PAGE</a></li>
-						<li class="hover:text-gray-400"><a href="">ABOUT ME</a></li>
-						<li class="hover:text-gray-400"><a href="">SERVICES</a></li>
-						<li class="hover:text-gray-400"><a href="">WORKS</a></li>
-						<li class="hover:text-gray-400"><a href="">CONTACT</a></li>
+					<ul
+						class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm"
+					>
+						<li class="hover:text-gray-400"><a href="#">HOME PAGE</a></li>
+						<li class="hover:text-gray-400"><a href="#about">ABOUT ME</a></li>
+						<li class="hover:text-gray-400">
+							<a href="#services">SERVICES</a>
+						</li>
+						<li class="hover:text-gray-400"><a href="#works">WORKS</a></li>
+						<li class="hover:text-gray-400"><a href="#contact">CONTACT</a></li>
 					</ul>
 					<img
 						src="./img/moon.png"
 						class="hidden md:block w-5 cursor-pointer"
 						alt=""
+						id="moon"
 					/>
 					<div
 						id="hamberger"
@@ -47,11 +53,11 @@
 						id="menu"
 						class="hidden bg-red-900 absolute p-10 top-0 left-0 w-full rounded-b-3xl space-y-10 text-white text-center"
 					>
-						<li class=""><a href="">HOME PAGE</a></li>
-						<li class=""><a href="">ABOUT ME</a></li>
-						<li class=""><a href="">SERVICES</a></li>
-						<li class=""><a href="">WORKS</a></li>
-						<li class=""><a href="">CONTACT</a></li>
+						<li class="hLink"><a href="#">HOME PAGE</a></li>
+						<li class="hLink"><a href="#about">ABOUT ME</a></li>
+						<li class="hLink"><a href="#services">SERVICES</a></li>
+						<li class="hLink"><a href="#works">WORKS</a></li>
+						<li class="hLink"><a href="#contact">CONTACT</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -75,9 +81,11 @@
 			</div>
 			<!-- texts  -->
 			<div
-				class="hidden lg:flex flex-col absolute top-0 bottom-0 m-auto right-10 gap-5 rounded-md shadow-xl shadow-red-200 bg-white p-6 h-fit w-1/3"
+				class="hidden lg:flex flex-col absolute top-0 bottom-0 m-auto right-10 gap-5 rounded-md shadow-xl shadow-red-200 bg-white dark:bg-slate-900 p-6 h-fit w-1/3"
 			>
-				<h1 class="text-4xl font-bold text-red-900">Hi, I'm Raouf Satto</h1>
+				<h1 class="text-4xl font-bold text-red-900 dark:text-red-500">
+					Hi, I'm Raouf Satto
+				</h1>
 				<p class="text-gray-500">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod numquam
 					sed eum neque molestias. Nobis cum in voluptate rem cupiditate quasi
@@ -91,7 +99,7 @@
 			</div>
 		</div>
 		<!-- about  -->
-		<div class="px-10">
+		<div id="about" class="px-10 dark:bg-slate-900">
 			<div
 				class="container mx-auto py-40 gap-20 flex flex-col-reverse lg:flex-row items-center"
 			>
@@ -103,14 +111,16 @@
 						class="h-1/4 absolute top-0 left-0 -z-10"
 					/>
 					<div class="h-full rounded-full overflow-hidden">
-						<img src="./img/portrait.png" alt="" />
+						<img src="./img/me.jpg" alt="" />
 					</div>
 				</div>
 				<!-- right  -->
 				<div class="flex flex-col gap-3 my-auto">
 					<h1 class="text-red-600 font-bold uppercase">About Me</h1>
-					<h1 class="text-3xl font-medium">Better Design</h1>
-					<h1 class="text-3xl font-medium">Better Experience</h1>
+					<h1 class="text-3xl font- dark:text-white">Better Design</h1>
+					<h1 class="text-3xl font-medium dark:text-white">
+						Better Experience
+					</h1>
 					<p class="text-gray-400">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
 						perspiciatis laboriosam aut amet praesentium nobis nisi eveniet.
@@ -244,49 +254,49 @@
 					<div
 						class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
 					>
-						<img src="./img/item.png" />
+						<img src="./img/2.jpg" />
 					</div>
 					<!-- card -->
 					<div
 						class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
 					>
-						<img src="./img/item.png" />
+						<img src="./img/3.jpg" />
 					</div>
 					<!-- card -->
 					<div
 						class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
 					>
-						<img src="./img/item.png" />
+						<img src="./img/4.jpg" />
 					</div>
 					<!-- card -->
 					<div
 						class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
 					>
-						<img src="./img/item.png" />
+						<img src="./img/5.jpg" />
 					</div>
 					<!-- card -->
 					<div
 						class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
 					>
-						<img src="./img/item.png" />
+						<img src="./img/6.jpg" />
 					</div>
 					<!-- card -->
 					<div
 						class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
 					>
-						<img src="./img/item.png" />
+						<img src="./img/default.jpg" />
 					</div>
 					<!-- card -->
 					<div
 						class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
 					>
-						<img src="./img/item.png" />
+						<img src="./img/2.jpg" />
 					</div>
 					<!-- card -->
 					<div
 						class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
 					>
-						<img src="./img/item.png" />
+						<img src="./img/3.jpg" />
 					</div>
 				</div>
 			</div>
@@ -331,14 +341,13 @@
 			</div>
 		</div>
 		<!-- footer -->
-		<div class="w-full bg-gray-800">
+		<div class="w-full bg-red-800">
 			<div class="container mx-auto py-5 flex items-center justify-between">
 				<div class="flex items-center gap-2">
-					<img class="w-8" src="./img/logo.png" alt="" />
-					<span class="text-2xl font-bold text-white">Portwind.</span>
+					<span class="text-2xl font-bold text-white">Raouf Satto.</span>
 				</div>
 				<span class="hidden md:block font-medium text-white"
-					>© 2022 Portwind. Design with ♥️ by Lama Dev.</span
+					>© 2022 - 2023. Design with ♥️ by Raouf Satto.</span
 				>
 				<div class="flex gap-2">
 					<img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
